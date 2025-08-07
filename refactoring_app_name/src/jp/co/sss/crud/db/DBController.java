@@ -288,7 +288,7 @@ public class DBController {
 			preparedStatement = connection.prepareStatement(ConstantSQL.SQL_UPDATE);
 
 			System.out.print(ConstantMsg.EMP_NAME + ConstantMsg.INPUT_PROMPT);
-			String emp_name = br.readLine();
+			String empName = br.readLine();
 			// 性別を入力
 			System.out.print(ConstantMsg.GENDER + ConstantMsg.INPUT_PROMPT);
 			String gender = br.readLine();
@@ -301,7 +301,7 @@ public class DBController {
 			String deptId = br.readLine();
 
 			// 入力値をバインド
-			preparedStatement.setString(1, emp_name);
+			preparedStatement.setString(1, empName);
 			preparedStatement.setString(2, gender);
 			preparedStatement.setString(3, birthday);
 			preparedStatement.setString(4, deptId);

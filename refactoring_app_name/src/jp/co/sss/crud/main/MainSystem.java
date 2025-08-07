@@ -63,10 +63,10 @@ public class MainSystem {
 			case ConstantValue.CHOICES_FIND_DEPT_ID:
 				// 検索する部署IDを入力
 				System.out.print(ConstantMsg.DEPT_ID + ConstantMsg.INPUT_PROMPT);
-				String deptIdA = br.readLine();
+				String searchDeptId = br.readLine();
 
 				// 検索機能の呼出
-				DBController.findByDeptId(deptIdA);
+				DBController.findByDeptId(searchDeptId);
 				break;
 
 			case ConstantValue.CHOICES_INSERT_EMPLOYEE:
@@ -74,14 +74,14 @@ public class MainSystem {
 				System.out.print(ConstantMsg.EMP_NAME + ConstantMsg.INPUT_PROMPT);
 				String emp_name = br.readLine();
 				System.out.print(ConstantMsg.GENDER + ConstantMsg.INPUT_PROMPT);
-				String Seibetsu = br.readLine();
+				String gender = br.readLine();
 				System.out.print(ConstantMsg.BIRTHDAY + ConstantMsg.INPUT_PROMPT);
 				String birthday = br.readLine();
 				System.out.print(ConstantMsg.DEPT_ID + ConstantMsg.INPUT_PROMPT);
-				String deptIdB = br.readLine();
+				String deptId = br.readLine();
 
 				// 登録機能の呼出
-				DBController.insert(emp_name, Seibetsu, birthday, deptIdB);
+				DBController.insert(emp_name, gender, birthday, deptId);
 				break;
 
 			case ConstantValue.CHOICES_UPDATE_EMPLOYEE:
@@ -89,11 +89,11 @@ public class MainSystem {
 				System.out.print(ConstantMsg.SELECT_UPDATE_EMPLOYEES_EMP_ID_MSG + ConstantMsg.INPUT_PROMPT);
 
 				// 更新する値を入力する
-				String empId_1 = br.readLine();
-				Integer.parseInt(empId_1);
+				String empId = br.readLine();
+				Integer.parseInt(empId);
 
 				// 更新機能の呼出
-				DBController.update(empId_1);
+				DBController.update(empId);
 				System.out.println(ConstantMsg.UPDATED_EMPLOYEE);
 
 				break;

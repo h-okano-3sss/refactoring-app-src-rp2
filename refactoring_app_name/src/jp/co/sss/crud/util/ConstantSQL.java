@@ -3,6 +3,7 @@ package jp.co.sss.crud.util;
 /**
  * 設定値をまとめたクラス(SQL関連)
  * テストコミット用の変更
+ * ブランチを使ったコミットテスト
  *
  * @author System Shared
  *

@@ -69,4 +69,13 @@ public class ConstantSQL {
 	/** 削除 */
 	public static final String SQL_DELETE = "DELETE FROM employee WHERE emp_id = ?";
 
+	public static final String EMP_ID = "emp_id";
+
+	public static final String EMP_NAME = "emp_name";
+
+	public static final String GENDER = "gender";
+	public static final String BIRTHDAY = "birthday";
+	public static final String DEPT_NAME = "dept_name";
+	public static final String PLACEHOLDER = "%";
+
 }
